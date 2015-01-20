@@ -1,0 +1,230 @@
+html, body, div, span, a, form, label {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+.body {
+	background: #3C4349;
+}
+
+.login_frame {
+	background: #444;
+	width: 400px;
+	margin: 4% auto 0 auto;
+	position: relative;
+}
+
+.login_frame_inner {
+	background: #3C4349;
+	padding: 20px;
+	position: relative;
+	border: 1px solid #333;
+	-moz-box-shadow: inset 0 1px 0 #444;
+	-webkit-box-shadow: inset 0 1px 0 #444;
+	box-shadow: inset 0 1px 0 #444;
+}
+
+.loginheader {
+	background: #3C4349;
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+.login_form {
+	margin-top: 20px;
+}
+
+.login_frame .logo {
+	text-align: center;
+	width: 350px; /*position: absolute; top: 10px; right: 50px;*/
+}
+
+.logo img {
+	
+}
+
+.login_frame p {
+	
+}
+
+p input#password {
+	margin: 0px 0 15px 0;
+}
+
+p input#username {
+	border-bottom: 1px solid
+}
+
+.login_frame label {
+	display: block;
+	color: #666;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+.login_frame input {
+	padding: 12px 10px 12px 41px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 8px;
+	font-size: 15px;
+	border: 0;
+	width: 309px;
+	-moz-box-shadow: 0 1px 0 #444;
+	-webkit-box-shadow: 0 1px 0 #444;
+	box-shadow: 0 1px 0 #444;
+	outline: none;
+}
+
+.login_frame input#username {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.login_frame input#password {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.login_frame button {
+	background: #77BD43;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: 0;
+	letter-spacing: 1px;
+	color: #333;
+	width: 360px;
+	-moz-box-shadow: 1px 1px 3px #222;
+	-webkit-box-shadow: 1px 1px 3px #222;
+	box-shadow: 1px 1px 3px #222;
+	cursor: pointer;
+	border-radius: 5px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.login_frame button.default, .login_frame button.hover, .login_frame button:active
+	{
+	background: ##77BD43;
+	color: #white;
+}
+
+.loginerror {
+	color: #990000;
+	background: #fbe3e3;
+	padding: 0 10px;
+	overflow: hidden;
+	display: none;
+}
+
+.loginerror {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.loginerror p {
+	margin: 10px 0;
+}
+
+.radius {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.title {
+	font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+}
+
+p {
+	position: relative;
+}
+
+form#login  span {
+	position: absolute;
+	background: #B0B0B0;
+	left: 0px;
+	top: 8px;
+	width: 41px;
+	height: 31px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+form#login  span#username_span {
+	border-top-left-radius: 5px;
+}
+
+form#login  span#password_span {
+	top: 0px;
+	border-bottom-left-radius: 5px;
+}
+
+#login_footer {
+	font-size: 12px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+	color: white;
+	font-family: museo_sans500, Arial, sans-serif
+}
+
+#rememberme {
+	float: left;
+	color: #B0B0B0;
+}
+
+#forgot_login_link {
+	float: right;
+	color: #B0B0B0;
+}
+
+.icon-email {
+	*zoom: expression(this.runtimeStyle [ 'zoom' ] = "1", this.innerHTML = '&#xe673;');
+	font-family: 'icomoon'
+}
+
+.icon-password {
+	*zoom: expression(this.runtimeStyle [ 'zoom' ] = "1", this.innerHTML = '&#xe682;');
+	font-family: 'icomoon'
+}
+
+@media screen and (max-width: 430px) {
+	body {
+		font-size: 11px;
+	}
+	button, input, select, textarea {
+		font-size: 11px;
+	}
+	.login_frame .logo {
+		width: auto;
+	}
+	.logo img {
+		width: 100%;
+	}
+	.login_frame {
+		width: auto;
+		margin: 10px;
+	}
+	.login_frame input {
+		width: 100%;
+		-webkit-box-sizing: border-box; ?? -moz-box-sizing : border-box;
+		box-sizing: border-box;
+	}
+	.login_frame button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
